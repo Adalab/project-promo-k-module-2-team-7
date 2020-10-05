@@ -1,0 +1,28 @@
+.design__title {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.design__title-container {
+  display: flex;
+}
+.icon-design {
+  margin: 27px 10px 0 20px;
+  font-size: 18px;
+  color: $color-backgroun-primary;
+}
+.design__main-title {
+  font-size: 18px;
+  margin-top: 27px;
+  color: $color-button;
+  font-family: $font-main;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.icon-up,
+.icon-down {
+  color: $color-button;
+  font-size: 18px;
+  margin: 27px 30px 0 0;
+}

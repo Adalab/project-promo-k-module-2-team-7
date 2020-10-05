@@ -1,10 +1,11 @@
 // core
-@import 'core/variables';
-@import 'core/reset';
+@import "core/variables";
+@import "core/reset";
 
 // layout
 
-@import 'layout/header';
-@import 'layout/_main-design';
-@import 'layout/footer';
-@import 'pages/index';
+@import "layout/header";
+@import "layout/_main-design";
+@import "layout/form";
+@import "layout/footer";
+@import "pages/index";
