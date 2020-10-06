@@ -1,0 +1,31 @@
+.fill {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.label,
+.fill__input {
+    display: block;
+    margin: 0 20px 7px;
+    font-family: $font-main;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.label {
+    color: $color-font-secondary;
+}
+
+.fill__input {
+    color: $color-input;
+    border: 1px solid $color-tertiary;
+    width: 281px;
+    height: 30px;
+    margin-bottom: 13px;
+}
+
+.fill__name {
+    margin-top: 25px;
+}
