@@ -25,6 +25,7 @@
   height: 30px;
   margin-bottom: 13px;
   padding-left: 9px;
+  outline-color: $color-backgroun-primary;
   &::placeholder {
     color: $color-input;
   }
@@ -50,6 +51,7 @@
   font-size: 14px;
   line-height: 20px;
   margin-bottom: 20px;
+  outline-color: $color-backgroun-primary;
 }
 .action__hiddenField {
   /* Ocultamos el input de tipo "file" porque no podemos 
