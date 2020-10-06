@@ -1,10 +1,13 @@
 // core
-@import 'core/variables';
-@import 'core/reset';
+@import "core/variables";
+@import "core/reset";
 
 // layout
 
-@import 'layout/header';
-@import 'layout/_main-design';
-@import 'layout/footer';
-@import 'pages/index';
+@import "layout/header";
+@import "layout/_main-design";
+@import "layout/form";
+@import "layout/form-fill";
+@import "layout/card-has-been-created.scss";
+@import "layout/footer";
+@import "pages/index";
