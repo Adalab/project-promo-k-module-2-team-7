@@ -1,76 +1,78 @@
 .fill {
+  width: 400px;
+  margin: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-.label,
-.fill__input {
-  display: block;
-  margin: 0 20px 7px;
-  font-family: $font-main;
-  font-size: 14px;
-  line-height: 20px;
-}
-
-.label {
-  color: $color-font-secondary;
-}
-
-.fill__input {
-  color: $color-input;
-  border: 1px solid $color-tertiary;
-  width: 281px;
-  height: 30px;
-  margin-bottom: 13px;
-  padding-left: 9px;
-  outline-color: $color-backgroun-primary;
-  &::placeholder {
-    color: $color-input;
+  &__form {
+    width: 281px;
+    border-bottom: 1px #d8d8d8 solid;
+    padding-bottom: 17px;
+    .label,
+    .fill__input {
+      display: block;
+      margin-bottom: 7px;
+      font-family: $font-main;
+      font-size: 14px;
+      line-height: 20px;
+    }
+    .label {
+      color: $color-font-secondary;
+    }
   }
-}
-
-.fill__name {
-  margin-top: 25px;
+  &__input {
+    color: $color-input;
+    border: 1px solid $color-tertiary;
+    width: 281px;
+    height: 30px;
+    margin-bottom: 13px;
+    padding-left: 9px;
+    outline-color: $color-backgroun-primary;
+    &::placeholder {
+      color: $color-input;
+    }
+  }
+  &__name {
+    margin-top: 25px;
+  }
 }
 
 .action {
   display: flex;
-  margin: 0 20px 7px;
-}
-.action__upload-btn {
-  background: $color-backgroun-primary;
-  width: 140px;
-  height: 30px;
-  border-radius: 3px;
-  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
-  border: none;
-  color: $color-white;
-  font-family: $font-main;
-  font-size: 14px;
-  line-height: 20px;
-  margin-bottom: 20px;
-  outline-color: $color-backgroun-primary;
-}
-.action__hiddenField {
-  /* Ocultamos el input de tipo "file" porque no podemos 
-  darle los estilos que queremos */
-  display: none;
+  margin-bottom: 7px;
+  &__upload-btn {
+    background: $color-backgroun-primary;
+    width: 140px;
+    height: 30px;
+    border-radius: 3px;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
+    border: none;
+    color: $color-white;
+    font-family: $font-main;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 20px;
+    outline-color: $color-backgroun-primary;
+  }
+  &__hiddenField {
+    /* Ocultamos el input de tipo "file" porque no podemos 
+    darle los estilos que queremos */
+    display: none;
+  }
 }
 
 .profile {
   margin: 0 auto;
   display: flex;
   justify-content: center;
-}
-
-.profile__preview {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  border: 1px solid $color-tertiary;
-  width: 30px;
-  height: 30px;
-  margin-right: 70px;
+  &__preview {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 1px solid $color-tertiary;
+    width: 30px;
+    height: 30px;
+    margin-right: 70px;
+  }
 }
