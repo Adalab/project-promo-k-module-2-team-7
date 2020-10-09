@@ -7,16 +7,6 @@
   justify-content: center;
   align-items: center;
 
-  // @media all and (min-width:768px) {
-  //   // no me pilla la altura
-  //   height: 812px;
-  //   border-radius: 6px;
-  // }
-
-  // @media all and (min-width:1200px) {
-  //   width: 585px;
-  // }
-
   &__reset {
     height: 30px;
     width: 75px;
@@ -102,6 +92,7 @@
       }
     }
   }
+  
 }
 
 @media all and (min-width:768px) {
@@ -125,6 +116,6 @@
       @media all and (min-width:1024px) {
         width: 585px;
       }
-    }
+  }
   }
 }
