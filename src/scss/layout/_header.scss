@@ -5,10 +5,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  @media all and (min-width: 768px) {
+    justify-content: flex-start;
+  }
 
   &__photo {
     height: 50px;
     width: 201px;
+    @media all and (min-width: 768px) {
+      margin: 31px 527px 30px 40px;
+    }
   }
-
 }

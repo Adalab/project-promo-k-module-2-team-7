@@ -5,11 +5,19 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  @media all and (min-width: 768px) {
+    height: 963px;
+  }
 
   &__image {
     margin: 95px 35px 35.4px 35px;
     width: 250px;
     height: 63px;
+    @media all and (min-width: 768px) {
+      margin: 350px 174px 31px 174px;
+      width: 419px;
+      height: 105px;
+    }
   }
 
   &__title {
@@ -20,6 +28,11 @@
     font-weight: 900;
     color: $color-backgroun-primary;
     margin: 0 49.3px 0 47.7px;
+    @media all and (min-width: 768px) {
+      width: 278px;
+      height: 31px;
+      font-size: 24px;
+    }
   }
 
   &__paragraph {
@@ -31,6 +44,11 @@
     text-align: center;
     color: $color-font-primary;
     margin: 0 28px 0 27.7px;
+    @media all and (min-width: 768px) {
+      width: 331px;
+      height: 48px;
+      font-size: 16px;
+    }
   }
 
   &__icons {
@@ -43,18 +61,32 @@
     align-items: center;
     justify-content: space-around;
     text-align: center;
+
+    @media all and (min-width: 768px) {
+      width: 325px;
+      height: 86px;
+      border-radius: 5px;
+      border: solid 2px rgba(225, 115, 52, 0.21);
+      padding: 15px 20px 10px 15px;
+    }
   }
 
   &__icons-container {
     font-size: 22.4px;
     color: $color-backgroun-primary;
     text-align: center;
+    @media all and (min-width: 768px) {
+      font-size: 28px;
+    }
   }
 
   &__icons-paragraph {
     font-family: $font-main;
     font-size: 12.8px;
     color: #54585a;
+    @media all and (min-width: 768px) {
+      font-size: 16px;
+    }
   }
 
   &__button-container {

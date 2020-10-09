@@ -1,12 +1,22 @@
 .design {
   width: 400px;
   margin: auto;
+
+  @media all and(min-width:768px) {
+    margin-left: -53px;
+  }
+
   &__title {
     padding: 0 60px;
     width: 400px;
     margin: auto;
     display: flex;
     justify-content: space-between;
+
+    @media all and(min-width:768px) {
+      padding: 0px 40px;
+    }
+
     .icon-up,
     .icon-down {
       color: $color-button;
@@ -14,14 +24,17 @@
       margin-top: 27px;
     }
   }
+
   &__title-container {
     display: flex;
+
     .icon-design {
       margin: 27px 10px 0 0px;
       font-size: 18px;
       color: $color-backgroun-primary;
     }
   }
+
   &__main-title {
     font-size: 18px;
     margin-top: 27px;
@@ -30,13 +43,20 @@
     font-weight: 600;
     text-transform: uppercase;
   }
+
   &__palette-title {
     color: $color-button;
     font-size: 14px;
     font-family: $font-main;
     margin: 22px 0 0 20px;
     text-transform: uppercase;
+
+    @media all and (min-width:768px) {
+      margin: 22px 0 0 0;
+
+    }
   }
+
   &__palette {
     width: 281px;
     margin: auto;
@@ -44,59 +64,76 @@
     justify-content: space-between;
     border-bottom: 1px #d8d8d8 solid;
     padding-bottom: 30px;
+
+    @media all and(min-width:768px) {
+      width: 329px;
+    }
   }
+
   &__palette-color {
     margin-top: 28px;
+
     &--green {
       display: flex;
+
       .green__1 {
         width: 30px;
         height: 25px;
         background-color: $color-font-secondary;
       }
+
       .green__2 {
         width: 30px;
         height: 25px;
         background-color: $color-quaternary;
       }
+
       .green__3 {
         width: 30px;
         height: 25px;
         background-color: $color-tertiary;
       }
     }
+
     &--red {
       display: flex;
       padding-top: 20px;
+
       .red__1 {
         width: 30px;
         height: 25px;
         background-color: $color-palette1;
       }
+
       .red__2 {
         width: 30px;
         height: 25px;
         background-color: $color-palette2;
       }
+
       .red__3 {
         width: 30px;
         height: 25px;
         background-color: $color-palette3;
       }
     }
+
     &--random {
       display: flex;
       padding-top: 20px;
+
       .random__1 {
         width: 30px;
         height: 25px;
         background-color: $color-palette4;
       }
+
       .random__2 {
         width: 30px;
         height: 25px;
         background-color: $color-palette5;
       }
+
       .random__3 {
         width: 30px;
         height: 25px;
