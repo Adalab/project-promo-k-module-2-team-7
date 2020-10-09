@@ -92,4 +92,30 @@
       }
     }
   }
+  
+}
+
+@media all and (min-width:768px) {
+  .main-all {
+    width: 100%;
+    height: 852px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+
+    &__img {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .main {
+      height: 812px;
+      border-radius: 6px;
+
+      @media all and (min-width:1024px) {
+        width: 585px;
+      }
+  }
+  }
 }

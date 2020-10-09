@@ -1,0 +1,42 @@
+.share {
+  width: 400px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @media all and(min-width:768px) {
+    margin-left: -53px;
+  }
+}
+
+.create-card__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 199px;
+  height: 50px;
+  background-color: #e17334;
+  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
+  border: none;
+  border-radius: 12px;
+  margin: 30px 60px 30px 61px;
+}
+
+.button__created-title {
+  /*  width: 170px;
+  height: 24px; */
+  font-size: 18px;
+  font-family: $font-main;
+  font-weight: 600;
+  color: white;
+  text-transform: uppercase;
+}
+
+.created-card__button-icon {
+  /*   width: 27px;
+  height: 25px; */
+  margin: 0px 9px 0px 0px;
+  color: white;
+}
