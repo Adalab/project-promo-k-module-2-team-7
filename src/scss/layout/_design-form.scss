@@ -51,9 +51,8 @@
     margin: 22px 0 0 20px;
     text-transform: uppercase;
 
-    @media all and (min-width:768px) {
+    @media all and (min-width: 768px) {
       margin: 22px 0 0 0;
-
     }
   }
 
@@ -150,4 +149,10 @@
   height: 17px;
   margin-right: 10px;
   margin-top: 4px;
+}
+.hidden {
+  display: none;
+}
+.nohidden {
+  display: inline-block;
 }
