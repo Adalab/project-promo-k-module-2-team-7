@@ -1,14 +1,14 @@
 'use strict'
 
 
-const arrowUp = document.querySelector(".js-arrow-up");
-console.log(arrowUp)
-const designPalette = document.querySelector(".js-design__palette");
+const arrow = document.querySelector(".js-arrow-up-down");
+arrow.innerHTML = ("hola");
 
-function arrowMove (ev) {
-    designPalette.classlist.toggle("js-arrowUp");
+
+function arrowMove () {
+    const designPalette = document.querySelector(".js-design__palette");
 }
 
-arrowUp.addEventListener('click', arrowMove);
+arrow.addEventListener('click', arrowMove);
 
-console.log(arrowUp);
+console.log(arrow);
