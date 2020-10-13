@@ -16,14 +16,3 @@ function fakeFileClick() {
   fileField.click();
 }
 uploadBtn.addEventListener("click", fakeFileClick), fileField.addEventListener("change", getImage);
-
-const designTitle = document.querySelector(".design__title");
-
-function arrowMove() {
-  const designPalette = document.querySelector(".design__palette");
-  designPalette.classList.toggle("hidden");
-}
-
-arrowMove();
-
-designTitle.addEventListener("click", arrowMove);
