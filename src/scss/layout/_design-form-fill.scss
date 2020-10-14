@@ -104,7 +104,7 @@
 .icon-down:hover {
    animation-name: arrow;
    animation-duration: 2s;
-   animation-iteration-count: infinite;
+   animation-iteration-count: 1;
  }
 
  @keyframes arrow {
@@ -112,7 +112,7 @@
    0% {
      transform: rotate(0deg);
    }
-   
+
   50% {
     transform: rotate(180deg);
     }
