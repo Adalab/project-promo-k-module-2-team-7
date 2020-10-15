@@ -1,41 +1,14 @@
-'use strict';
+"use strict";
 
 const fillData = document.querySelectorAll(".js-fill");
 
 const fillDataValue = function (event) {
   console.log(event.currentTarget.value);
+};
+
+for (const eachFillData of fillData) {
+  eachFillData.addEventListener("change", fillDataValue);
 }
-
-for (const eachFillData of fillData){
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* 'use strict';
 const nameInput = document.querySelector('.js-fill-name');
