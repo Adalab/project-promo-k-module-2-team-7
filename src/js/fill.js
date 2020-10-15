@@ -2,8 +2,21 @@
 
 const fillData = document.querySelectorAll(".js-fill");
 
+const dataValue = {
+  name: "Nombre Apellido",
+  role: "Front-end developer",
+  email: "hola@gmail.com",
+  telephone: "555-555-555",
+  linkedin: "NombreApellido",
+  github: "@NombreApellido",
+};
+
 const fillDataValue = function (event) {
-  console.log(event.currentTarget.value);
+  dataValue[event.currentTarget.id] = event.currentTarget.value;
+  for (let item in dataValue) {
+    const fillCards = document.querySelector(`.js-${item}`);
+    fillCards.innerHTML = dataValue[item];
+  }
 };
 
 for (const eachFillData of fillData) {

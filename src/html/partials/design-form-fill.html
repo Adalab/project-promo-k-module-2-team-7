@@ -10,13 +10,14 @@
     </div>
   </div>
   <form class="fill__form js-form-fill js-form" action="GET">
-    <label for="text" class="label fill__name">Nombre completo</label>
-    <input class="fill__input js-fill" type="text" name="text" placeholder="Ej: Sally Jill" />
-    <label for="text" class="label fill__job">Puesto</label>
+    <label for="name" class="label fill__name">Nombre completo</label>
+    <input id = "name" class="fill__input js-fill" type="text" name="name" placeholder="Ej: Sally Jill" />
+    <label for="role" class="label fill__job">Puesto</label>
     <input
       class="fill__input js-fill"
       type="text"
-      name="text"
+      id = "role"
+      name="role"
       placeholder="Ej: Front-end unicorn"
     />
     <label class="label fill__img" for="text">Imagen de perfil</label>
@@ -36,25 +37,28 @@
     <label for="email" class="label fill__email">Email</label>
     <input
       class="fill__input js-fill"
-      type="email"
+      type = "email"
+      id = "email"
       name="email"
       placeholder="Ej: sally-hill@gmal.com"
     />
-    <label for="tel" class="label fill__tel">Teléfono</label>
-    <input class="fill__input js-fill" type="tel" name="tel" placeholder="Ej: 555-55-55-55" />
+    <label for="telephone" class="label fill__tel">Teléfono</label>
+    <input id = "telephone" class="fill__input js-fill" type="tel" name="telephone" placeholder="Ej: 555-55-55-55" />
 
-    <label for="text" class="label fill__linkedin">Linkedin</label>
+    <label for="linkedin" class="label fill__linkedin">Linkedin</label>
     <input
       class="fill__input js-fill"
       type="text"
-      name="text"
+      id = "linkedin"
+      name="linkedin"
       placeholder="Ej: linkedin.com/in/sally.hill"
     />
-    <label for="text" class="label fill__github">Github</label>
+    <label for="github" class="label fill__github">Github</label>
     <input
       class="fill__input js-fill"
       type="text"
-      name="text"
+      id = "github"
+      name="github"
       placeholder="Ej: @github-hill"
     />
   </form>
