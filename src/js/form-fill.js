@@ -2,27 +2,30 @@
 
 // constantes
 
+const fillInputs = document.querySelectorAll(".js-fill");
+
 const dataElements = {
   name: "",
   job: "",
+  email: "",
+  telephone: "",
+  linkdein: "",
+  github: "",
 };
-const fillInputs = document.querySelectorAll(".js-fill");
-const fillName = document.querySelector(".js-name");
-const fillJob = document.querySelector(".js-description");
 
-// coger el valor de los inputs
-
+// handler
 function paintPhoto(ev) {
   dataElements[ev.currentTarget.id] = ev.currentTarget.value;
-  for (const dataElement in dataElements) {
-    dataElement.innerHTML;
+  for (let item in dataElements) {
+    const dataElement = document.querySelectorAll(`.js-${item}`);
+    dataElement.innerHTML = dataElements[item];
+    console.log(dataElement.innerHTML);
   }
   // fillName.innerHTML = fillInputNameValue;
   // fillJob.innerHTML = fillInputJobValue;
 }
 
-// listener
-
+// listener con array
 for (const fillInput of fillInputs) {
   fillInput.addEventListener("focus", paintPhoto);
 }
