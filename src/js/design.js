@@ -1,8 +1,23 @@
 'use strict';
 
-const palette1 = document.querySelector('.js-green0');
-const palette2 = document.querySelector('.js-red0');
-const palette3 = document.querySelector('.js-random0');
+//////////////////////
+const palette = document.querySelectorAll('.js-palette');
+for (let i = 0; i < palette.length; i++) {
+  palette[i].addEventListener('click', changeColor)
+  palette[i].id = i;
+}
+function changeColor(event) {
+  console.log('hola');
+  if(event.currentTarget.id = 0)
+    name.classList.add('.js-name-' + event.currentTarget.id)
+  
+
+  
+}
+
+/////////////////////////
+
+
 const icons = document.querySelectorAll('.js-icons');
 const name = document.querySelector('.js-name');
 const borderTitle = document.querySelector('.js-title');
