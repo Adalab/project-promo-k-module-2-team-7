@@ -1,14 +1,14 @@
 .share {
+  width: 400px;
+  margin: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
 
-.icon-design {
-  margin: 27px 10px 0 20px;
-  font-size: 18px;
-  color: #e17334;
+  @media all and(min-width:768px) {
+    margin-left: -53px;
+  }
 }
 
 .create-card__button {
@@ -44,8 +44,3 @@
   /*   margin: 0px 9px 0px 0px; */
   color: white;
 }
-/* .create-card {
-  border-bottom: 1px #d8d8d8 solid;
-  padding: 0px 20px 30px 20px;
-}
- */
