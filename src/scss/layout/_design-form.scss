@@ -20,7 +20,6 @@
       width: 329px;
       // padding: 0px 40px;
     }
-
     .icon-up,
     .icon-down {
       color: $color-button;
@@ -128,4 +127,7 @@
 
 .red__3 {
   background-color: $color-palette3;
+}
+.border-title {
+  border: none;
 }
