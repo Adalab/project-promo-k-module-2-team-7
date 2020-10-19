@@ -48,8 +48,7 @@
     background-color: $color-white;
     margin: 0 45px;
     padding-top: 21px;
-    box-shadow: 0 1px 10px 0 (rgba(0, 0, 0, 0.2)),
-      0 1px 3px 0 rgba(0, 0, 0, 0.35);
+    box-shadow: 0 1px 10px 0 (rgba(0, 0, 0, 0.2)), 0 1px 3px 0 rgba(0, 0, 0, 0.35);
 
     &--title {
       margin: 0 14px 10px 0;
@@ -74,19 +73,6 @@
       .js-name-random {
         color: $color-palette4;
       }
-
-      /* ________________________________________ */
-      /* .green {
-           & .title
-        color: $color-font-primary;
-      }
-      .red {
-        color: $color-palette1;
-      }
-      .random {
-        color: $color-palette4;
-      } */
-      /* _________________________________________ */
       .description {
         font-size: 16px;
         color: $color-button;
