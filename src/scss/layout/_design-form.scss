@@ -1,5 +1,5 @@
 .design {
-  width: 400px;
+  width: 100%;
   margin: auto;
 
   @media all and(min-width:768px) {
@@ -7,14 +7,14 @@
   }
 
   &__title {
-    padding: 0 60px;
-    width: 400px;
+    padding: 0 45px;
+    width: 375px;
     margin: auto;
     display: flex;
     justify-content: space-between;
 
     @media all and(min-width:768px) {
-      padding: 0px 40px;
+      padding: 0px 00px;
     }
 
     .icon-up,
@@ -22,12 +22,16 @@
       color: $color-button;
       font-size: 18px;
       margin-top: 27px;
+      margin-right: 50px;
     }
   }
 
   &__title-container {
     display: flex;
-
+    margin-right: 155px;
+    @media all and(min-width:768px) {
+      margin-right: 217px;
+    }
     .icon-design {
       margin: 27px 10px 0 0px;
       font-size: 18px;
@@ -61,7 +65,6 @@
     margin: auto;
     display: flex;
     justify-content: space-between;
-    border-bottom: 1px #d8d8d8 solid;
     padding-bottom: 30px;
 
     @media all and(min-width:768px) {
