@@ -1,5 +1,5 @@
 .main {
-  background-color: #bfcdd0;
+  background-size: cover;
   height: 457px;
   width: 100%;
   display: flex;
@@ -21,7 +21,7 @@
     width: 75px;
     margin: 0 168px 20px 0;
     padding: 4px 12px 4px 10px;
-    border: solid 1px $color-white;
+    border: solid 1px $color-button;
     border-radius: 15px;
     display: flex;
     justify-content: center;
@@ -48,7 +48,8 @@
     background-color: $color-white;
     margin: 0 45px;
     padding-top: 21px;
-    box-shadow: 0 1px 10px 0 (rgba(0, 0, 0, 0.2)), 0 1px 3px 0 rgba(0, 0, 0, 0.35);
+    box-shadow: 0 1px 10px 0 (rgba(0, 0, 0, 0.2)),
+      0 1px 3px 0 rgba(0, 0, 0, 0.35);
 
     &--title {
       margin: 0 14px 10px 0;
