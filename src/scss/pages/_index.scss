@@ -98,6 +98,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    &:hover {
+      transform: scale(0.98);
+      background-color: $color-backgroun-primary;
+    }
   }
 
   &__button {
