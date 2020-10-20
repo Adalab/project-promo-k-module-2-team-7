@@ -1,14 +1,17 @@
 .design {
   width: 100%;
   margin: auto;
+  margin-top: 17px;
 
   @media all and(min-width:768px) {
     margin-left: -53px;
   }
 
   &__title {
-    padding: 0 60px;
-    width: 375px;
+    border-top: 1px #d8d8d8 solid;
+    padding-bottom: 7px;
+    // padding: 0 60px;
+    width: 280px;
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -17,14 +20,15 @@
     }
 
     @media all and(min-width:768px) {
-      padding: 0px 40px;
+      width: 329px;
+      // padding: 0px 40px;
     }
 
     .icon-up {
       color: $color-button;
       font-size: 18px;
       margin-top: 27px;
-      
+
       &-move {
         animation-name: arrow;
         animation-duration: 3s;
@@ -43,7 +47,7 @@
     display: flex;
 
     .icon-design {
-      margin: 27px 10px 0 0px;
+      margin: 10px 10px 0 0px;
       font-size: 18px;
       color: $color-backgroun-primary;
     }
@@ -51,7 +55,7 @@
 
   &__main-title {
     font-size: 18px;
-    margin-top: 27px;
+    margin-top: 10px;
     color: $color-button;
     font-family: $font-main;
     font-weight: 600;
@@ -75,9 +79,7 @@
     margin: auto;
     display: flex;
     justify-content: space-between;
-    border-bottom: 1px #d8d8d8 solid;
     padding-bottom: 30px;
-    
 
     @media all and(min-width:768px) {
       width: 329px;
@@ -141,4 +143,7 @@
 
 .red__3 {
   background-color: $color-palette3;
+}
+.border-title {
+  border: none;
 }
