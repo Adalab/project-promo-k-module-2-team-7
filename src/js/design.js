@@ -40,16 +40,16 @@ const paintCard = (color) => {
 ></div>
 </div>
 <div class="main__photo--social">
-<a href="" class="js-icon-phone js-telephone" target="_blank" title="Teléfono"
+<a href="" class="js-icon-phone js-telephone js-social" target="_blank" title="Teléfono"
   ><i class="icons js-icons js-icons-${color} fas fa-mobile-alt"></i
 ></a>
-<a href="" class="js-icon-mail js-email" target="_blank" title="Email"
+<a href="" class="js-icon-mail js-email js-social" target="_blank" title="Email"
   ><i class="icons js-icons js-icons-${color} far fa-envelope"></i
 ></a>
-<a href="" class="js-icon-linkedin js-linkedin" target="_blank" title="Linkedin"
+<a href="" class="js-icon-linkedin js-linkedin js-social" target="_blank" title="Linkedin"
   ><i class="icons js-icons js-icons-${color} fab fa-linkedin-in"></i
 ></a>
-<a href="" class="js-icon-github js-github" target="_blank" title="Github"
+<a href="" class="js-icon-github js-github js-social" target="_blank" title="Github"
   ><i class="icons js-icons js-icons-${color} fab fa-github-alt"></i
 ></a>
 </div>`;
