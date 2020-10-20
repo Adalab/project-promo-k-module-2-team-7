@@ -12,9 +12,9 @@
     margin: auto;
     display: flex;
     justify-content: space-between;
-    // &:hover {
-    //   transform: scale(1.03);
-    
+    &:hover {
+      transform: scale(1.03);
+    }
 
     @media all and(min-width:768px) {
       padding: 0px 40px;
