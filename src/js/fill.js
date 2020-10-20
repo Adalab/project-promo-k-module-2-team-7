@@ -17,11 +17,41 @@ const fillDataValue = function (event) {
     const fillCards = document.querySelector(`.js-${item}`);
     fillCards.innerHTML = dataValue[item];
   }
+
+  // localStorage.setItem("dataFrom", JSON.stringify(dataValue));
+  // getLocalStorage();
 };
+
+// function getLocalStorage() {
+//   const savedTasks = JSON.parse(localStorage.getItem("dataFrom"));
+//   for (const savedTask in savedTasks) {
+//     fillCards.value = savedTask;
+//   }
+// }
 
 for (const eachFillData of fillData) {
   eachFillData.addEventListener("change", fillDataValue);
 }
+
+////////////////////////////////////
+//localStorage
+//guardar en el localStorage
+
+//obtener los datos del localStorage
+//   //localStorage
+//   //guardar en el localStorage
+
+//obtener los datos del localStorage
+// localStorage.setItem(`${item}`, JSON.stringify(dataValue[item]));
+
+// function getLocalStorage() {
+//   if (localStorage.getItem("dataValue[item]")) {
+//     const savedTasks = JSON.parse(localStorage.getItem(`${item}`));
+//   }
+// }
+// getLocalStorage();
+
+///////////////////////////////////////////////////
 
 /* 'use strict';
 const nameInput = document.querySelector('.js-fill-name');

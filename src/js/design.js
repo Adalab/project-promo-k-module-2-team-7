@@ -27,7 +27,7 @@ const paintPalettes = () => {
   }
 };
 
-const paintCard = (color) => {
+const paintCard = (color, url) => {
   card.innerHTML = "";
   card.innerHTML = `<div class="main__photo--title js-title js-title-${color}">
 <h4 class="name js-name js-name-${color}">Nombre apellido</h4>
@@ -36,7 +36,7 @@ const paintCard = (color) => {
 <div class="main__photo--photo">
 <div
   class="profile__image js__profile-image"
-  style="background-image: url('./assets/images/MM.jpg')"
+  style="background-image: url(${url})"
 ></div>
 </div>
 <div class="main__photo--social">
@@ -57,7 +57,7 @@ const paintCard = (color) => {
 
 // Paint elements
 paintPalettes();
-paintCard("red");
+paintCard("red", "./assets/images/MM.jpg");
 
 const radioButtonList = document.querySelectorAll(".js-palette");
 
@@ -68,5 +68,5 @@ for (let i = 0; i < radioButtonList.length; i++) {
 
 function handleRadioButtonCLick(event) {
   console.log("palette Id", event.target.id);
-  paintCard(event.target.id);
+  paintCard(event.target.id, `${fr.result}`);
 }
