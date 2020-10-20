@@ -1,5 +1,5 @@
 .main {
-  background-color: #bfcdd0;
+  background-size: cover;
   height: 457px;
   width: 100%;
   display: flex;
@@ -21,7 +21,7 @@
     width: 75px;
     margin: 0 168px 20px 0;
     padding: 4px 12px 4px 10px;
-    border: solid 1px $color-white;
+    border: solid 1px $color-button;
     border-radius: 15px;
     display: flex;
     justify-content: center;

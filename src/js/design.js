@@ -36,7 +36,7 @@ const paintCard = (color) => {
 <div class="main__photo--photo">
 <div
   class="profile__image js__profile-image"
-  style="background-image: url(https://via.placeholder.com/300x300/cccccc/666666/?text=IMAGE)"
+  style="background-image: url('./assets/images/MM.jpg')"
 ></div>
 </div>
 <div class="main__photo--social">
