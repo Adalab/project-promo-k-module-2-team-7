@@ -6,22 +6,7 @@ const fillSection = document.querySelector(".js-form-fill");
 const cardSection = document.querySelector(".js-form-card");
 const arrowsUp = document.querySelectorAll(".js-arrow-up");
 
-//
-
-// function name1() {
-//   let arrow;
-//   for (const arrowUp of arrowsUp) {
-//     arrow = arrowUp.id;
-//     console.log(arrow);
-//   }
-//   console.log(arrow);
-
-//   return arrow;
-// }
-
 function hiddenSection(ev) {
-  // const arrowDif = name1();
-  // console.log(arrowDif);
   const clickId = ev.target.id;
   if (clickId == 1) {
     paletteSection.classList.toggle("hidden");
