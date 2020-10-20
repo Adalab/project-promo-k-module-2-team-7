@@ -8,27 +8,37 @@ const arrowsUp = document.querySelectorAll(".js-arrow-up");
 
 //
 
-function hiddenSection(ev) {
-  // for (let i = 0; i < arrowsUp.length; i++) {
-  //   let arrowUp = arrowsUp[i].id;
-  //   console.log(arrowUp);
+// function name1() {
+//   let arrow;
+//   for (const arrowUp of arrowsUp) {
+//     arrow = arrowUp.id;
+//     console.log(arrow);
+//   }
+//   console.log(arrow);
 
+//   return arrow;
+// }
+
+function hiddenSection(ev) {
+  // const arrowDif = name1();
+  // console.log(arrowDif);
   const clickId = ev.target.id;
   if (clickId == 1) {
     paletteSection.classList.toggle("hidden");
     fillSection.classList.add("hidden");
     cardSection.classList.add("hidden");
-    // arrowUp.classList.add("icon-up-move");
+    arrowsUp[0].classList.toggle("icon-up-move");
+    console.log(arrowsUp[1]);
   } else if (clickId == 2) {
     fillSection.classList.toggle("hidden");
     paletteSection.classList.add("hidden");
     cardSection.classList.add("hidden");
-    // arrowUp.classList.add("icon-up-move");
+    arrowsUp[1].classList.toggle("icon-up-move");
   } else if (clickId == 3) {
     cardSection.classList.toggle("hidden");
     paletteSection.classList.add("hidden");
     fillSection.classList.add("hidden");
-    // arrowUp.classList.add("icon-up-move");
+    arrowsUp[2].classList.toggle("icon-up-move");
   }
 }
 
