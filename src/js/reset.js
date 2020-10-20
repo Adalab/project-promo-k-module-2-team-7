@@ -6,7 +6,6 @@ const role = document.querySelector(".js-role");
 const image = document.querySelector(".js__profile-image");
 const miniImage = document.querySelector(".js__profile-preview");
 const social = document.querySelectorAll(".js-social");
-fillData;
 
 function resetData() {
   name.innerHTML = "Nombre Apellido";

@@ -13,7 +13,6 @@ function hiddenSection(ev) {
     fillSection.classList.add("hidden");
     cardSection.classList.add("hidden");
     arrowsUp[0].classList.toggle("icon-up-move");
-    console.log(arrowsUp[1]);
   } else if (clickId == 2) {
     fillSection.classList.toggle("hidden");
     paletteSection.classList.add("hidden");

@@ -53,13 +53,13 @@ for (const eachFillData of fillData) {
 
 ///////////////////////////////////////////////////
 
-/* 'use strict';
-const nameInput = document.querySelector('.js-fill-name');
-const jobInput = document.querySelector('.js-fill-job');
-const emailInput = document.querySelector('.js-fill-email');
-const telInput = document.querySelector('.js-fill-tel');
-const linkedinInput = document.querySelector('.js-fill-linkedin');
-const githubInput = document.querySelector('.js-fill-github');
+//  'use strict';
+// const nameInput = document.querySelector('.js-fill-name');
+// const jobInput = document.querySelector('.js-fill-job');
+// const emailInput = document.querySelector('.js-fill-email');
+// const telInput = document.querySelector('.js-fill-tel');
+// const linkedinInput = document.querySelector('.js-fill-linkedin');
+// const githubInput = document.querySelector('.js-fill-github');
 
 // nameInput.addEventListener("keyup", function () {
 //   name.innerHTML = nameInput.value;

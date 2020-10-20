@@ -67,7 +67,5 @@ for (let i = 0; i < radioButtonList.length; i++) {
 }
 
 function handleRadioButtonCLick(event) {
-  console.log("palette Id", event.target.id);
-  paintCard(event.target.id);
+  paintCard(event.target.id, `${fr.result}`);
 }
-// `${fr.result}`;
