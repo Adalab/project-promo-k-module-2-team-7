@@ -26,8 +26,8 @@
 
     .icon-up {
       color: $color-button;
-      font-size: 18px;
-      margin-top: 27px;
+          font-size: 19px;
+          margin-top: 12px;
 
       &-move {
         animation-name: arrow;
@@ -90,6 +90,7 @@
     margin-top: 28px;
     display: flex;
   }
+
 }
 
 .hidden {
