@@ -1,5 +1,5 @@
 .design {
-  width: 400px;
+  width: 100%;
   margin: auto;
 
   @media all and(min-width:768px) {
@@ -8,7 +8,7 @@
 
   &__title {
     padding: 0 60px;
-    width: 400px;
+    width: 375px;
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -71,85 +71,58 @@
 
   &__palette-color {
     margin-top: 28px;
-
-    &--green {
-      display: flex;
-
-      .green__1 {
-        width: 30px;
-        height: 25px;
-        background-color: $color-font-secondary;
-      }
-
-      .green__2 {
-        width: 30px;
-        height: 25px;
-        background-color: $color-quaternary;
-      }
-
-      .green__3 {
-        width: 30px;
-        height: 25px;
-        background-color: $color-tertiary;
-      }
-    }
-
-    &--red {
-      display: flex;
-      padding-top: 20px;
-
-      .red__1 {
-        width: 30px;
-        height: 25px;
-        background-color: $color-palette1;
-      }
-
-      .red__2 {
-        width: 30px;
-        height: 25px;
-        background-color: $color-palette2;
-      }
-
-      .red__3 {
-        width: 30px;
-        height: 25px;
-        background-color: $color-palette3;
-      }
-    }
-
-    &--random {
-      display: flex;
-      padding-top: 20px;
-
-      .random__1 {
-        width: 30px;
-        height: 25px;
-        background-color: $color-palette4;
-      }
-
-      .random__2 {
-        width: 30px;
-        height: 25px;
-        background-color: $color-palette5;
-      }
-
-      .random__3 {
-        width: 30px;
-        height: 25px;
-        background-color: $color-palette6;
-      }
-    }
+    display: flex;
   }
 }
 
-.green0,
-.red0,
-.random0 {
+.hidden {
+  display: none;
+}
+/////////////////////////
+
+.palettes {
   width: 17px;
   height: 17px;
   margin-right: 10px;
   margin-top: 4px;
 }
-.hidden {
-  display: none;
+
+.box-color {
+  width: 30px;
+  height: 25px;
+}
+
+.green__1 {
+  background-color: $color-font-secondary;
+}
+
+.green__2 {
+  background-color: $color-quaternary;
+}
+
+.green__3 {
+  background-color: $color-tertiary;
+}
+.random__1 {
+  background-color: $color-palette4;
+}
+
+.random__2 {
+  background-color: $color-palette5;
+}
+
+.random__3 {
+  background-color: $color-palette6;
+}
+
+.red__1 {
+  background-color: $color-palette1;
+}
+
+.red__2 {
+  background-color: $color-palette2;
+}
+
+.red__3 {
+  background-color: $color-palette3;
 }
