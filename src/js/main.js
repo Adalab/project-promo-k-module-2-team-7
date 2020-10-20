@@ -5,7 +5,6 @@ const uploadBtn = document.querySelector(".js__profile-trigger");
 const fileField = document.querySelector(".js__profile-upload-btn");
 const profileImage = document.querySelector(".js__profile-image");
 const profilePreview = document.querySelector(".js__profile-preview");
-
 /**
  * Recoge el archivo añadido al campo de tipo "file"
  * y lo carga en nuestro objeto FileReader para que
@@ -19,7 +18,6 @@ function getImage(e) {
   fr.addEventListener("load", writeImage);
   fr.readAsDataURL(myFile);
 }
-
 /**
  * Una vez tenemos los datos listos en el FR podemos
  * trabajar con ellos ;)
@@ -33,7 +31,6 @@ function writeImage() {
   profileImage.style.backgroundImage = `url(${fr.result})`;
   profilePreview.style.backgroundImage = `url(${fr.result})`;
 }
-
 /**
  * Genera un click automático en nuesto campo de tipo "file"
  * que está oculto
@@ -41,7 +38,6 @@ function writeImage() {
 function fakeFileClick() {
   fileField.click();
 }
-
 /**
  * Añadimos los listeners necesarios:
  * - al botón visible para generar el click automático
