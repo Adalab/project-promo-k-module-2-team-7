@@ -23,19 +23,20 @@ const fillDataValue = function (event) {
   localStorage.setItem("dataFrom", JSON.stringify(dataValue));
   name.innerHTML = dataValue.name;
   role.innerHTML = dataValue.role;
-  iconMail.href = "maitlo:" + dataValue.email;
-  iconPhone.href = "tel:+34" + dataValue.telephone;
+  iconMail.href = "mailto:" + dataValue.email;
+  iconPhone.href = "tel:" + dataValue.telephone;
   iconLinkedin.href = dataValue.linkedin;
   iconGithub.href = dataValue.github;
 };
+getLocalStorage();
 
 function getLocalStorage() {
   const savedTasks = JSON.parse(localStorage.getItem("dataFrom"));
   console.log(savedTasks);
   name.innerHTML = savedTasks.name;
   role.innerHTML = savedTasks.role;
-  iconMail.href = "maitlo:" + savedTasks.email;
-  iconPhone.href = "tel:+34" + savedTasks.telephone;
+  iconMail.href = "mailto:" + savedTasks.email;
+  iconPhone.href = "tel:" + savedTasks.telephone;
   iconLinkedin.href = savedTasks.linkedin;
   iconGithub.href = savedTasks.github;
 }
@@ -43,7 +44,6 @@ function getLocalStorage() {
 for (const eachFillData of fillData) {
   eachFillData.addEventListener("change", fillDataValue);
 }
-getLocalStorage();
 ////////////////////////////////////
 //localStorage
 //guardar en el localStorage
