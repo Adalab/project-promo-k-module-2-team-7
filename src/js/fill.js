@@ -13,21 +13,13 @@ let dataValue = {
   telephone: "555-555-555",
   linkedin: "NombreApellido",
   github: "@NombreApellido",
+  photo: "./assets/images/MM.jpg",
 };
 
 const fillDataValue = function (event) {
   dataValue[event.currentTarget.id] = event.currentTarget.value;
-  // for (let item in dataValue) {
-  //   const fillCards = document.querySelector(`.js-${item}`);
-  // }
   localStorage.setItem("dataFrom", JSON.stringify(dataValue));
   renderPreview();
-  // name.innerHTML = dataValue.name;
-  // role.innerHTML = dataValue.role;
-  // iconPhone.href = "tel:" + dataValue.telephone;
-  // iconMail.href = "mailto:" + dataValue.email;
-  // iconLinkedin.href = dataValue.linkedin;
-  // iconGithub.href = dataValue.github;
 };
 
 function getLocalStorage() {
@@ -62,6 +54,13 @@ function renderPreview() {
   iconMail.href = "mailto:" + dataValue.email;
   iconLinkedin.href = dataValue.linkedin;
   iconGithub.href = dataValue.github;
+  //Rellenar inputs
+  fillData[0].value = dataValue.name;
+  fillData[1].value = dataValue.role;
+  fillData[2].value = dataValue.email;
+  fillData[3].value = dataValue.telephone;
+  fillData[4].value = dataValue.linkedin;
+  fillData[5].value = dataValue.github;
 
   // Actualizar la foto
   profileImage.style.backgroundImage = `url(${dataValue.photo})`;
@@ -70,25 +69,6 @@ function renderPreview() {
 for (const eachFillData of fillData) {
   eachFillData.addEventListener("change", fillDataValue);
 }
-////////////////////////////////////
-//localStorage
-//guardar en el localStorage
-
-//obtener los datos del localStorage
-//   //localStorage
-//   //guardar en el localStorage
-
-//obtener los datos del localStorage
-// localStorage.setItem(`${item}`, JSON.stringify(dataValue[item]));
-
-// function getLocalStorage() {
-//   if (localStorage.getItem("dataValue[item]")) {
-//     const savedTasks = JSON.parse(localStorage.getItem(`${item}`));
-//   }
-// }
-// getLocalStorage();
-
-///////////////////////////////////////////////////
 
 //  'use strict';
 // const nameInput = document.querySelector('.js-fill-name');

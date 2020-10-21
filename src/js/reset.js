@@ -18,7 +18,6 @@ function resetData() {
   for (let item of fillData) {
     item.value = "";
   }
-  paintCard("red");
 }
 
 reset.addEventListener("click", resetData);
