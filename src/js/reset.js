@@ -12,6 +12,7 @@ function resetData() {
   role.innerHTML = "Front-end developer";
   image.style = "background-image: url('./assets/images/MM.jpg')";
   miniImage.style = "";
+  radioButtonList[1].checked = true;
   for (let item of social) {
     item.href = "";
   }
