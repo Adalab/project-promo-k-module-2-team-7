@@ -1,6 +1,9 @@
 "use strict";
-
+const iconPhone = document.querySelector(".js-icon-phone");
 const fillData = document.querySelectorAll(".js-fill");
+const iconMail = document.querySelector(".js-icon-mail");
+const iconLinkedin = document.querySelector(".js-icon-linkedin");
+const iconGithub = document.querySelector(".js-icon-github");
 
 const dataValue = {
   name: "Nombre Apellido",
@@ -15,24 +18,31 @@ const fillDataValue = function (event) {
   dataValue[event.currentTarget.id] = event.currentTarget.value;
   for (let item in dataValue) {
     const fillCards = document.querySelector(`.js-${item}`);
-    fillCards.innerHTML = dataValue[item];
   }
-
-  // localStorage.setItem("dataFrom", JSON.stringify(dataValue));
-  // getLocalStorage();
+  localStorage.setItem("dataFrom", JSON.stringify(dataValue));
+  name.innerHTML = dataValue.name;
+  role.innerHTML = dataValue.role;
+  iconPhone.href = "tel:" + dataValue.telephone;
+  iconMail.href = "mailto:" + dataValue.email;
+  iconLinkedin.href = dataValue.linkedin;
+  iconGithub.href = dataValue.github;
+  getLocalStorage();
 };
 
-// function getLocalStorage() {
-//   const savedTasks = JSON.parse(localStorage.getItem("dataFrom"));
-//   for (const savedTask in savedTasks) {
-//     fillCards.value = savedTask;
-//   }
-// }
+function getLocalStorage() {
+  const savedTasks = JSON.parse(localStorage.getItem("dataFrom"));
+  console.log(savedTasks);
+  name.innerHTML = savedTasks.name;
+  role.innerHTML = savedTasks.role;
+  iconPhone.href = "tel:" + savedTasks.telephone;
+  iconMail.href = "mailto:" + savedTasks.email;
+  iconLinkedin.href = savedTasks.linkedin;
+  iconGithub.href = savedTasks.github;
+}
 
 for (const eachFillData of fillData) {
   eachFillData.addEventListener("change", fillDataValue);
 }
-
 ////////////////////////////////////
 //localStorage
 //guardar en el localStorage
