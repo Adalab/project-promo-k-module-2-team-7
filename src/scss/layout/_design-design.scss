@@ -91,6 +91,10 @@
       border-left: solid 5px $color-palette5;
     }
 
+    .main__photo.red .main__photo--title {
+      border-left-color: red;
+    }
+
     &--photo {
       height: 200px;
       width: 240px;

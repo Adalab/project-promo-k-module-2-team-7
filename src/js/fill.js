@@ -37,7 +37,6 @@ function getLocalStorage() {
     renderPreview();
   }
 }
-//.main__photo.red .main__photo--title { border-left-color: red; }
 /*
  * Actualiza la tarjeta preview desde la infor que hay en dataValue
  */
