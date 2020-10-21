@@ -40,7 +40,6 @@ let buttonPossition = 1;
 function handleRadioButtonCLick(event) {
   dataValue.palette = event.currentTarget.value;
   buttonPossition = event.currentTarget.id;
-  console.log(radioButtonList[buttonPossition].checked);
   localStorage.setItem("dataFrom", JSON.stringify(dataValue));
   renderPreview();
 }
