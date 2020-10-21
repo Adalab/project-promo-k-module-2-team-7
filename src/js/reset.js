@@ -22,3 +22,4 @@ function resetData() {
 }
 
 reset.addEventListener("click", resetData);
+getLocalStorage();
