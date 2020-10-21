@@ -42,19 +42,19 @@ function getLocalStorage() {
  */
 function renderPreview() {
   // Actualiza los colores
-  const titleContainer = document.querySelector(".js-title");
-  titleContainer.classList.remove("js-green");
-  titleContainer.classList.remove("js-red");
-  titleContainer.classList.remove("js-random");
-  if (dataValue.palette === 1) {
-    titleContainer.classList.add("js-green");
+  const cardContainer = document.querySelector(".js-card-container");
+  cardContainer.classList.remove("js-green", "js-red", "js-random");
+
+  if (dataValue.palette === "1") {
+    cardContainer.classList.add("js-green");
   }
-  if (dataValue.palette === 2) {
-    titleContainer.classList.add("js-red");
+  if (dataValue.palette === "2") {
+    cardContainer.classList.add("js-red");
   }
-  if (dataValue.palette === 3) {
-    titleContainer.classList.add("js-random");
+  if (dataValue.palette === "3") {
+    cardContainer.classList.add("js-random");
   }
+
   name.innerHTML = dataValue.name;
   role.innerHTML = dataValue.role;
   iconPhone.href = "tel:" + dataValue.telephone;

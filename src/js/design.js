@@ -18,9 +18,11 @@ const paintPalettes = () => {
   for (let i = 0; i < palette.length; i++) {
     /* este codigo lo quiero repetido, lo meto dentro de for con += para q no se sobreesciba */
     paletteColors.innerHTML += `<div class="design__palette-color">
-  <input id=${palette[i]} class="palettes js-palette" type="radio" name="palette" value="${
-      i + 1
-    }" />
+  <input id=${
+    palette[i]
+  } class="palettes js-palette" type="radio" name="palette" value="${i + 1}" ${
+      i === 0 ? "checked" : ""
+    }/>
   <span class="box-color ${palette[i]}__1"></span> 
   <span class="box-color ${palette[i]}__2"></span>
   <span class="box-color ${palette[i]}__3"></span>
