@@ -1,7 +1,6 @@
 "use strict";
 
 /*PASO 1- pinto mi paleta en html */
-
 /* me hago un array */
 const palette = ["green", "red", "random"];
 
