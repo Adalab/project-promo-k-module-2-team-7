@@ -3,25 +3,22 @@ const iconPhone = document.querySelector(".js-icon-phone");
 const iconMail = document.querySelector(".js-icon-mail");
 const iconLinkedin = document.querySelector(".js-icon-linkedin");
 const iconGithub = document.querySelector(".js-icon-github");
-
 const fillData = document.querySelectorAll(".js-fill");
 let dataValue = {
   palette: 1,
   name: "Nombre Apellido",
   role: "Front-end developer",
-  email: "hola@gmail.com",
-  telephone: "555-555-555",
-  linkedin: "NombreApellido",
-  github: "@NombreApellido",
+  email: "",
+  telephone: "",
+  linkedin: "",
+  github: "",
   photo: "./assets/images/MM.jpg",
 };
-
 const fillDataValue = function (event) {
   dataValue[event.currentTarget.id] = event.currentTarget.value;
   localStorage.setItem("dataFrom", JSON.stringify(dataValue));
   renderPreview();
 };
-
 function getLocalStorage() {
   const savedTaskRaw = localStorage.getItem("dataFrom");
   if (savedTaskRaw) {
@@ -36,7 +33,6 @@ function renderPreview() {
   // Actualiza los colores
   const cardContainer = document.querySelector(".js-card-container");
   cardContainer.classList.remove("js-green", "js-red", "js-random");
-
   if (dataValue.palette === "1") {
     cardContainer.classList.add("js-green");
   }
@@ -46,7 +42,6 @@ function renderPreview() {
   if (dataValue.palette === "3") {
     cardContainer.classList.add("js-random");
   }
-
   name.innerHTML = dataValue.name;
   role.innerHTML = dataValue.role;
   iconPhone.href = "tel:" + dataValue.telephone;
@@ -65,7 +60,6 @@ function renderPreview() {
   // Actualizar la foto
   profileImage.style.backgroundImage = `url(${dataValue.photo})`;
 }
-
 for (const eachFillData of fillData) {
   eachFillData.addEventListener("change", fillDataValue);
 }
