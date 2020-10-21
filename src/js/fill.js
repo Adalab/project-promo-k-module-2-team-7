@@ -61,7 +61,8 @@ function renderPreview() {
   fillData[3].value = dataValue.telephone;
   fillData[4].value = dataValue.linkedin;
   fillData[5].value = dataValue.github;
-
+  //Actualizar el radio button
+  radioButtonList[dataValue.palette - 1].checked = true;
   // Actualizar la foto
   profileImage.style.backgroundImage = `url(${dataValue.photo})`;
 }

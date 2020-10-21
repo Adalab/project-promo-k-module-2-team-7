@@ -18,9 +18,7 @@ const paintPalettes = () => {
   for (let i = 0; i < palette.length; i++) {
     /* este codigo lo quiero repetido, lo meto dentro de for con += para q no se sobreesciba */
     paletteColors.innerHTML += `<div class="design__palette-color">
-  <input id=${palette[i]} class="palettes js-palette" type="radio" name="palette" value="${
-      i + 1
-    }" />
+  <input id=${i} class="palettes js-palette" type="radio" name="palette" value="${i + 1}" />
   <span class="box-color ${palette[i]}__1"></span> 
   <span class="box-color ${palette[i]}__2"></span>
   <span class="box-color ${palette[i]}__3"></span>
@@ -38,9 +36,11 @@ const radioButtonList = document.querySelectorAll(".js-palette");
 for (let i = 0; i < radioButtonList.length; i++) {
   radioButtonList[i].addEventListener("click", handleRadioButtonCLick);
 }
-
+let buttonPossition = 1;
 function handleRadioButtonCLick(event) {
   dataValue.palette = event.currentTarget.value;
+  buttonPossition = event.currentTarget.id;
+  console.log(radioButtonList[buttonPossition].checked);
   localStorage.setItem("dataFrom", JSON.stringify(dataValue));
   renderPreview();
 }
