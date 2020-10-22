@@ -18,6 +18,7 @@ function resetData() {
   for (let item of fillData) {
     item.value = "";
   }
+  localStorage.clear();
 }
 
 reset.addEventListener("click", resetData);
