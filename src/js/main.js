@@ -30,6 +30,9 @@ function writeImage() {
    */
   profileImage.style.backgroundImage = `url(${fr.result})`;
   profilePreview.style.backgroundImage = `url(${fr.result})`;
+  dataValue.photo = fr.result;
+  localStorage.setItem("dataFrom", JSON.stringify(dataValue));
+  renderPreview();
 }
 /**
  * Genera un click automático en nuesto campo de tipo "file"

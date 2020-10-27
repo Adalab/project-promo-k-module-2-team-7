@@ -18,7 +18,8 @@ function resetData() {
   for (let item of fillData) {
     item.value = "";
   }
-  paintCard("red");
+  localStorage.clear();
 }
 
 reset.addEventListener("click", resetData);
+getLocalStorage();
