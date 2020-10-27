@@ -49,8 +49,7 @@
     background-color: $color-white;
     margin: 0 45px;
     padding-top: 21px;
-    box-shadow: 0 1px 10px 0 (rgba(0, 0, 0, 0.2)),
-      0 1px 3px 0 rgba(0, 0, 0, 0.35);
+    box-shadow: 0 1px 10px 0 (rgba(0, 0, 0, 0.2)), 0 1px 3px 0 rgba(0, 0, 0, 0.35);
 
     &--title {
       margin: 0 14px 10px 0;
@@ -149,4 +148,7 @@
       justify-content: center;
     }
   }
+}
+.main-photo__design {
+  margin-right: 40px;
 }
