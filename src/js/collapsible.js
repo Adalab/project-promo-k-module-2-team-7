@@ -35,7 +35,7 @@ for (const formTitle of formTitles) {
 function addAppearTwitter() {
   cardTwitter.classList.remove("card__hidden");
   btnCreated.classList.add("create-card__button--color");
-  btnCreated.classList.remove("create-card__button:hover");
+  btnCreated.classList.remove("hover");
 }
 
 btnCreated.addEventListener("click", addAppearTwitter);
