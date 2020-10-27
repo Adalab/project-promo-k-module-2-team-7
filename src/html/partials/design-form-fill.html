@@ -1,19 +1,30 @@
 <section class="fill">
-  <div class="design__title">
-    <div class="design__title-container">
-      <i class="far fa-keyboard icon-design"></i>
-      <h2 class="design__main-title">Rellena</h2>
+  <div class="design__title js-form-title1" id="2">
+    <div class="design__title-container" id="2">
+      <i class="far fa-keyboard icon-design" id="2"></i>
+      <h2 class="design__main-title" id="2">Rellena</h2>
     </div>
-    <div class="design__down-up">
-      <i class="fas fa-angle-up icon-up"></i>
-      <i class="fas fa-angle-down icon-down"></i>
+    <div class="design__down-up js-design__down-up" id="2">
+      <i class="far fa-gem icon-up js-arrow-up" id="2"></i>
     </div>
   </div>
-  <form class="fill__form" action="GET">
-    <label for="text" class="label fill__name">Nombre completo</label>
-    <input class="fill__input" type="text" name="text" placeholder="Ej: Sally Jill" />
-    <label for="text" class="label fill__job">Puesto</label>
-    <input class="fill__input" type="text" name="text" placeholder="Ej: Front-end unicorn" />
+  <form class="fill__form js-form-fill js-form" action="GET">
+    <label for="name" class="label fill__name">Nombre completo</label>
+    <input
+      id="name"
+      class="fill__input js-fill"
+      type="text"
+      name="name"
+      placeholder="Ej: Marilyn Monroe"
+    />
+    <label for="role" class="label fill__job">Puesto</label>
+    <input
+      class="fill__input js-fill"
+      type="text"
+      id="role"
+      name="role"
+      placeholder="Ej: Diva Developer"
+    />
     <label class="label fill__img" for="text">Imagen de perfil</label>
 
     <div class="action">
@@ -29,18 +40,37 @@
       </div>
     </div>
     <label for="email" class="label fill__email">Email</label>
-    <input class="fill__input" type="email" name="email" placeholder="Ej: sally-hill@gmal.com" />
-    <label for="tel" class="label fill__tel">Puesto</label>
-    <input class="fill__input" type="tel" name="tel" placeholder="Ej: 555-55-55-55" />
-
-    <label for="text" class="label fill__linkedin">Linkedin</label>
     <input
-      class="fill__input"
-      type="text"
-      name="text"
-      placeholder="Ej: linkedin.com/in/sally.hill"
+      class="fill__input js-fill"
+      type="email"
+      id="email"
+      name="email"
+      placeholder="Ej: marilyn-monroe@gmail.com"
     />
-    <label for="text" class="label fill__github">Github</label>
-    <input class="fill__input" type="text" name="text" placeholder="Ej: @github-hill" />
+    <label for="telephone" class="label fill__tel">Teléfono</label>
+    <input
+      id="telephone"
+      class="fill__input js-fill"
+      type="tel"
+      name="telephone"
+      placeholder="Ej: 555-55-55-55"
+    />
+
+    <label for="linkedin" class="label fill__linkedin">Linkedin</label>
+    <input
+      class="fill__input js-fill"
+      type="text"
+      id="linkedin"
+      name="linkedin"
+      placeholder="Ej: linkedin.com/in/hollywood.monroe"
+    />
+    <label for="github" class="label fill__github">Github</label>
+    <input
+      class="fill__input js-fill"
+      type="text"
+      id="github"
+      name="github"
+      placeholder="Ej: @github-diva-monroe"
+    />
   </form>
 </section>

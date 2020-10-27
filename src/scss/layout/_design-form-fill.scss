@@ -1,5 +1,5 @@
 .fill {
-  width: 400px;
+  width: 100%;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -10,10 +10,8 @@
     margin-left: -53px;
   }
 
-
   &__form {
     width: 281px;
-    border-bottom: 1px #d8d8d8 solid;
     padding-bottom: 17px;
 
     @media all and(min-width:768px) {
