@@ -5,6 +5,8 @@ const paletteSection = document.querySelector(".js-form-palette");
 const fillSection = document.querySelector(".js-form-fill");
 const cardSection = document.querySelector(".js-form-card");
 const arrowsUp = document.querySelectorAll(".js-arrow-up");
+const btnCreated = document.querySelector(".js-button-created");
+const cardTwitter = document.querySelector(".js-card");
 
 function hiddenSection(ev) {
   const clickId = ev.target.id;
@@ -29,3 +31,11 @@ function hiddenSection(ev) {
 for (const formTitle of formTitles) {
   formTitle.addEventListener("click", hiddenSection);
 }
+
+function addAppearTwitter() {
+  cardTwitter.classList.remove("card__hidden");
+  btnCreated.classList.add("create-card__button--color");
+  btnCreated.classList.remove("create-card__button:hover");
+}
+
+btnCreated.addEventListener("click", addAppearTwitter);
