@@ -65,29 +65,45 @@
         font-weight: bold;
         text-transform: capitalize;
       }
-      .js-name-green {
-        color: $color-font-primary;
-      }
-      .js-name-red {
-        color: $color-palette1;
-      }
-      .js-name-random {
-        color: $color-palette4;
-      }
+
       .description {
         font-size: 16px;
         color: $color-button;
         font-family: $font-secondary;
       }
     }
-    .js-title-green {
+
+    &.js-green &--title {
       border-left: solid 5px $color-quaternary;
     }
-    .js-title-red {
+    &.js-red &--title {
       border-left: solid 5px $color-palette2;
     }
-    .js-title-random {
+    &.js-random &--title {
       border-left: solid 5px $color-palette5;
+    }
+
+    &.js-green .name {
+      color: $color-font-primary;
+    }
+    &.js-red .name {
+      color: $color-palette1;
+    }
+    &.js-random .name {
+      color: $color-palette4;
+    }
+
+    &.js-green .icons {
+      color: $color-font-primary;
+      border: solid 2px $color-tertiary;
+    }
+    &.js-red .icons {
+      color: $color-palette1;
+      border: solid 2px $color-palette3;
+    }
+    &.js-random .icons {
+      color: $color-palette4;
+      border: solid 2px $color-palette6;
     }
 
     &--photo {
@@ -116,21 +132,10 @@
         padding: 6px;
         margin-right: 5px;
       }
-      .js-icons-green {
-        color: $color-font-primary;
-        border: solid 2px $color-tertiary;
-      }
-      .js-icons-red {
-        color: $color-palette1;
-        border: solid 2px $color-palette3;
-      }
-      .js-icons-random {
-        color: $color-palette4;
-        border: solid 2px $color-palette6;
-      }
     }
   }
 }
+
 .main-all {
   background-image: linear-gradient(to bottom, #f5f5f5, #ffffff 9%);
 }

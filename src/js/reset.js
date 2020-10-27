@@ -12,13 +12,19 @@ function resetData() {
   role.innerHTML = "Front-end developer";
   image.style = "background-image: url('./assets/images/MM.jpg')";
   miniImage.style = "";
+  radioButtonList[0].checked = true;
   for (let item of social) {
     item.href = "";
   }
   for (let item of fillData) {
     item.value = "";
   }
-  paintCard("red");
+  dataValue.palette = 1;
+  const cardContainer = document.querySelector(".js-card-container");
+  cardContainer.classList.remove("js-green", "js-red", "js-random");
+  cardContainer.classList.add("js-green");
+  localStorage.clear();
 }
 
 reset.addEventListener("click", resetData);
+getLocalStorage();
