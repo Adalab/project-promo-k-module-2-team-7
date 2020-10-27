@@ -22,9 +22,12 @@
   border: none;
   border-radius: 12px;
   margin: 30px 60px 30px 61px;
-  &:hover {
-    transform: scale(1.03);
+  &--color {
+    background-color: #d5d5d5;
   }
+}
+.hover:hover {
+  transform: scale(1.03);
 }
 
 .button__created-title {
