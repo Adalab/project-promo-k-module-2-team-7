@@ -44,7 +44,7 @@ function renderPreview() {
   }
   name.innerHTML = dataValue.name;
   job.innerHTML = dataValue.job;
-  iconPhone.href = "tel:+34 " + dataValue.phone;
+  iconPhone.href = "tel:+34" + dataValue.phone;
   iconMail.href = "mailto:" + dataValue.email;
   iconLinkedin.href = dataValue.linkedin;
   iconGithub.href = dataValue.github;
