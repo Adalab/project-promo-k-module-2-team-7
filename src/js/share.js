@@ -16,7 +16,7 @@ function createCard(event) {
 }
 function getURL(result) {
   if (result.success) {
-    responseURL.innerHTML = `<a target="_blank" href="${result.cardURL}">${result.cardURL}</a>`;
+    responseURL.innerHTML = `<a target="_blank" href="${result.cardURL}">Aquí tienes tu tarjeta</a>`;
     const tweet =
       "¡Hola! Un DIAMANTE es solo un trozo de carbón que soportó una presión extraordinaria! Para mostrarlo al mundo, las < Div_as> me han ayudado a hacer esta tarjeta 💎";
     buttonTwitter.setAttribute(
