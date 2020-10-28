@@ -26,11 +26,11 @@
   margin: 30px 60px 30px 61px;
   outline-style: none;
   padding: 0 12px;
-  &--color {
+  &__color {
     background-color: #d5d5d5;
   }
 }
-.hover:hover {
+.create-card:hover {
   transform: scale(1.03);
 }
 
