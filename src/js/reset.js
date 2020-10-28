@@ -8,6 +8,16 @@ const miniImage = document.querySelector(".js__profile-preview");
 const social = document.querySelectorAll(".js-social");
 
 function resetData() {
+  dataValue = {
+    palette: 1,
+    name: "Nombre Apellido",
+    job: "Front-end developer",
+    email: "",
+    phone: "",
+    linkedin: "",
+    github: "",
+    photo: "./assets/images/MM.jpg",
+  };
   name.innerHTML = "Nombre Apellido";
   job.innerHTML = "Front-end developer";
   image.style = "background-image: url('./assets/images/MM.jpg')";
@@ -19,7 +29,6 @@ function resetData() {
   for (let item of fillData) {
     item.value = "";
   }
-  dataValue.palette = 1;
   const cardContainer = document.querySelector(".js-card-container");
   cardContainer.classList.remove("js-green", "js-red", "js-random");
   cardContainer.classList.add("js-green");
