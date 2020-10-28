@@ -8,6 +8,10 @@ const arrowsUp = document.querySelectorAll(".js-arrow-up");
 const btnCreated = document.querySelector(".js-button-created");
 const cardTwitter = document.querySelector(".js-card");
 
+paletteSection.classList.add("hidden");
+fillSection.classList.add("hidden");
+cardSection.classList.add("hidden");
+
 function hiddenSection(ev) {
   const clickId = ev.target.id;
   if (clickId == 1) {
