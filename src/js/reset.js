@@ -29,6 +29,13 @@ function resetData() {
   for (let item of fillData) {
     item.value = "";
   }
+  cardTwitter.classList.add("card__hidden");
+  btnCreated.classList.remove("create-card__color");
+
+  paletteSection.classList.add("hidden");
+  fillSection.classList.add("hidden");
+  cardSection.classList.add("hidden");
+
   const cardContainer = document.querySelector(".js-card-container");
   cardContainer.classList.remove("js-green", "js-red", "js-random");
   cardContainer.classList.add("js-green");
