@@ -4,23 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://kit.fontawesome.com/e9c34022b4.js" crossorigin="anonymous"></script>
-    <link rel="icon" href="./assets/images/icon.png" />
+    <link rel="icon" href="./assets/images/favicon.png" />
     <link rel="stylesheet" href="./assets/css/main.css" />
-    <title>Awesome profile cards</title>
+    <title>Div_as profile cards</title>
   </head>
 
   <body>
     <header>
       <div class="header">
-        <img class="header__photo" src="./assets/images/tarjetas-molonas.png" alt="">
+        <img class="header__photo" src="./assets/images/divas-cards.png" alt="Logo-tarjetas" />
       </div>
     </header>
+
     <main class="main-all">
       <section class="main-all__photo main-all__img">
-        <section
-          class="main"
-          style="background-image: url('./assets/images/Fondo.jpg')"
-        >
+        <section class="main" style="background-image: url('./assets/images/Fondo.jpg')">
           <div class="main__reset js-reset">
             <i class="far fa-trash-alt main__reset--trash"></i>
             <a class="main__reset--button" href="#">Reset</a>
@@ -29,7 +27,7 @@
           <section class="main__photo js-card-container">
             <div class="main__photo--title js-title">
               <h4 class="name js-name">Nombre apellido</h4>
-              <p class="description js-description js-role">Front-end developer</p>
+              <p class="description js-description js-job">Front-end developer</p>
             </div>
             <div class="main__photo--photo">
               <div
@@ -38,21 +36,13 @@
               ></div>
             </div>
             <div class="main__photo--social">
-              <a
-                href=""
-                class="js-icon-phone js-telephone"
-                target="_blank"
-                title="Teléfono"
+              <a href="" class="js-icon-phone js-telephone" target="_blank" title="Teléfono"
                 ><i class="icons js-icons fas fa-mobile-alt"></i
               ></a>
               <a href="" class="js-icon-mail js-email" target="_blank" title="Email"
                 ><i class="icons js-icons far fa-envelope"></i
               ></a>
-              <a
-                href=""
-                class="js-icon-linkedin js-linkedin"
-                target="_blank"
-                title="Linkedin"
+              <a href="" class="js-icon-linkedin js-linkedin" target="_blank" title="Linkedin"
                 ><i class="icons js-icons fab fa-linkedin-in"></i
               ></a>
               <a href="" class="js-icon-github js-github" target="_blank" title="Github"
@@ -103,12 +93,12 @@
               name="name"
               placeholder="Ej: Marilyn Monroe"
             />
-            <label for="role" class="label fill__job">Puesto</label>
+            <label for="job" class="label fill__job">Puesto</label>
             <input
               class="fill__input js-fill"
               type="text"
-              id="role"
-              name="role"
+              id="job"
+              name="job"
               placeholder="Ej: Diva Developer"
             />
             <label class="label fill__img" for="text">Imagen de perfil</label>
@@ -133,12 +123,12 @@
               name="email"
               placeholder="Ej: marilyn-monroe@gmail.com"
             />
-            <label for="telephone" class="label fill__tel">Teléfono</label>
+            <label for="phone" class="label fill__tel">Teléfono</label>
             <input
-              id="telephone"
+              id="phone"
               class="fill__input js-fill"
               type="tel"
-              name="telephone"
+              name="phone"
               placeholder="Ej: 555-55-55-55"
             />
 
@@ -148,7 +138,7 @@
               type="text"
               id="linkedin"
               name="linkedin"
-              placeholder="Ej: linkedin.com/in/hollywood.monroe"
+              placeholder="Ej: hollywood.monroe"
             />
             <label for="github" class="label fill__github">Github</label>
             <input
@@ -156,7 +146,7 @@
               type="text"
               id="github"
               name="github"
-              placeholder="Ej: @github-diva-monroe"
+              placeholder="Ej: diva-monroe"
             />
           </form>
         </section>
@@ -169,37 +159,33 @@
             </div>
             <div class="design__down-up" id="3">
               <i class="far fa-gem icon-up js-arrow-up" id="3"></i>
-              <!-- <i class="fas fa-angle-up icon-up js-arrow-up"></i>
-              <i class="fas fa-angle-down icon-down js-arrow-down"></i> -->
             </div>
           </div>
-          <div class="create-card js-form-card js-form">
-            <button class="create-card__button">
-              <i class="far fa-address-card created-card__button-icon"></i>
-              <h3 class="button__created-title">Crear tarjeta</h3>
-            </button>
-          </div>
+          <form class="create-card js-form-card js-form hover js-button-created">
+            <i class="far fa-address-card created-card__button-icon"></i>
+            <input type="button" class="create-card__button button__created-title" value="Crear tarjeta" />
+          </form>
         </section>
 
-        <div class="card">
+        <div class="card js-card card__hidden">
           <div class="card__created js-form-created">
             <h2 class="card__created-title">La tarjeta ha sido creada:</h2>
-            <a href="#" class="card__created-link">link de lo q vaya aki</a>
+            <p class="card__created-link js-card-link"></p>
             <!-- imagino q esto sea un link a la tarjeta creada, no lo tengo claro -->
-            <button class="button__twitter">
+            <a target="_blank" class="button__twitter js-button-twitter">
               <i class="fab fa-twitter button__twitter-icon"></i>
               <h3 class="button__twitter-title">Compartir en twitter</h3>
-            </button>
+            </a>
           </div>
         </div>
 
       </section>
     </main>
     <footer class="footer">
-      <small class="footer__copy">Awesome profile-cards &copy; 2020</small>
+      <small class="footer__copy">< Div_as> profile-cards &copy; 2020</small>
       <img
         class="footer__logo"
-        src="./assets/images/logo-divas.png"
+        src="./assets/images/logo.png"
         alt="Logo del equipo"
         title="Logo del equipo"
       />
