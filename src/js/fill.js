@@ -7,9 +7,9 @@ const fillData = document.querySelectorAll(".js-fill");
 let dataValue = {
   palette: 1,
   name: "Nombre Apellido",
-  role: "Front-end developer",
+  job: "Front-end developer",
   email: "",
-  telephone: "",
+  phone: "",
   linkedin: "",
   github: "",
   photo: "./assets/images/MM.jpg",
@@ -43,16 +43,16 @@ function renderPreview() {
     cardContainer.classList.add("js-random");
   }
   name.innerHTML = dataValue.name;
-  role.innerHTML = dataValue.role;
-  iconPhone.href = "tel:" + dataValue.telephone;
+  job.innerHTML = dataValue.job;
+  iconPhone.href = "tel:+34 " + dataValue.phone;
   iconMail.href = "mailto:" + dataValue.email;
   iconLinkedin.href = dataValue.linkedin;
   iconGithub.href = dataValue.github;
   //Rellenar inputs
   fillData[0].value = dataValue.name;
-  fillData[1].value = dataValue.role;
+  fillData[1].value = dataValue.job;
   fillData[2].value = dataValue.email;
-  fillData[3].value = dataValue.telephone;
+  fillData[3].value = dataValue.phone;
   fillData[4].value = dataValue.linkedin;
   fillData[5].value = dataValue.github;
   //Actualizar el radio button
