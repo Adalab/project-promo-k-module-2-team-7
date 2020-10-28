@@ -6,7 +6,7 @@
   flex-direction: column;
   align-items: center;
   @media all and (min-width: 768px) {
-    height: 92vh;
+    height: 963px;
   }
 
   &__image {
@@ -14,7 +14,7 @@
     width: 250px;
     height: 73px;
     @media all and (min-width: 768px) {
-      margin: 200px 174px 31px 174px;
+      margin: 280px 174px 31px 174px;
       width: 440px;
       height: 135px;
     }
@@ -68,7 +68,7 @@
       border-radius: 5px;
       border: solid 2px rgba(225, 115, 52, 0.21);
       padding: 15px 20px 10px 15px;
-      margin-bottom: 90px;
+      margin-bottom: 155px;
     }
   }
 
